@@ -1,0 +1,100 @@
+2018-12-12T15:08:38.073013+00:00 heroku[run.4463]: Awaiting client
+2018-12-12T15:08:38.104256+00:00 heroku[run.4463]: Starting process with command `bundle exec rails console`
+2018-12-12T15:08:38.303777+00:00 heroku[run.4463]: State changed from starting to up
+2018-12-12T15:08:45.590045+00:00 heroku[run.4463]: State changed from up to complete
+2018-12-12T15:08:45.572276+00:00 heroku[run.4463]: Process exited with status 1
+2018-12-12T15:09:35.670759+00:00 heroku[web.1]: State changed from crashed to starting
+2018-12-12T15:09:38.654640+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 25841 -e production`
+2018-12-12T15:09:42.637618+00:00 heroku[web.1]: State changed from starting to crashed
+2018-12-12T15:09:42.525022+00:00 app[web.1]: => Booting Puma
+2018-12-12T15:09:42.525058+00:00 app[web.1]: => Rails 5.1.6.1 application starting in production
+2018-12-12T15:09:42.525060+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2018-12-12T15:09:42.525062+00:00 app[web.1]: Exiting
+2018-12-12T15:09:42.525091+00:00 app[web.1]: /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/application/configuration.rb:144:in `rescue in database_configuration': YAML syntax error occurred while parsing /app/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): did not find expected key while parsing a block mapping at line 7 column 1 (RuntimeError)
+2018-12-12T15:09:42.525093+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/application/configuration.rb:126:in `database_configuration'
+2018-12-12T15:09:42.525098+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.6.1/lib/active_record/railtie.rb:121:in `block (2 levels) in <class:Railtie>'
+2018-12-12T15:09:42.525100+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+2018-12-12T15:09:42.525102+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+2018-12-12T15:09:42.525103+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+2018-12-12T15:09:42.525105+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+2018-12-12T15:09:42.525107+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+2018-12-12T15:09:42.525108+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:49:in `each'
+2018-12-12T15:09:42.525110+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+2018-12-12T15:09:42.525114+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.6.1/lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+2018-12-12T15:09:42.525116+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.6.1/lib/active_record/base.rb:25:in `<top (required)>'
+2018-12-12T15:09:42.525117+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `require'
+2018-12-12T15:09:42.525119+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `block in require'
+2018-12-12T15:09:42.525121+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:258:in `load_dependency'
+2018-12-12T15:09:42.525125+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `require'
+2018-12-12T15:09:42.525127+00:00 app[web.1]: from /app/app/models/application_record.rb:1:in `<top (required)>'
+2018-12-12T15:09:42.525128+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `require'
+2018-12-12T15:09:42.525130+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `block in require'
+2018-12-12T15:09:42.525134+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:258:in `load_dependency'
+2018-12-12T15:09:42.525135+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `require'
+2018-12-12T15:09:42.525137+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:379:in `block in require_or_load'
+2018-12-12T15:09:42.525142+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:36:in `block in load_interlock'
+2018-12-12T15:09:42.525143+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+2018-12-12T15:09:42.525145+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/concurrency/share_lock.rb:149:in `exclusive'
+2018-12-12T15:09:42.525168+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies/interlock.rb:11:in `loading'
+2018-12-12T15:09:42.525172+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:36:in `load_interlock'
+2018-12-12T15:09:42.525176+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:357:in `require_or_load'
+2018-12-12T15:09:42.525179+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:335:in `depend_on'
+2018-12-12T15:09:42.525183+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:251:in `require_dependency'
+2018-12-12T15:09:42.525187+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/engine.rb:476:in `block (2 levels) in eager_load!'
+2018-12-12T15:09:42.525190+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/engine.rb:475:in `each'
+2018-12-12T15:09:42.525195+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/engine.rb:475:in `block in eager_load!'
+2018-12-12T15:09:42.525198+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/engine.rb:473:in `each'
+2018-12-12T15:09:42.525200+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/engine.rb:473:in `eager_load!'
+2018-12-12T15:09:42.525204+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/engine.rb:354:in `eager_load!'
+2018-12-12T15:09:42.525207+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/application/finisher.rb:67:in `each'
+2018-12-12T15:09:42.525209+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/application/finisher.rb:67:in `block in <module:Finisher>'
+2018-12-12T15:09:42.525213+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/initializable.rb:30:in `instance_exec'
+2018-12-12T15:09:42.525217+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/initializable.rb:30:in `run'
+2018-12-12T15:09:42.525218+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/initializable.rb:59:in `block in run_initializers'
+2018-12-12T15:09:42.525223+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:228:in `block in tsort_each'
+2018-12-12T15:09:42.525226+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+2018-12-12T15:09:42.525228+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:431:in `each_strongly_connected_component_from'
+2018-12-12T15:09:42.525272+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:349:in `block in each_strongly_connected_component'
+2018-12-12T15:09:42.525274+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:347:in `each'
+2018-12-12T15:09:42.525276+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:347:in `call'
+2018-12-12T15:09:42.525277+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:347:in `each_strongly_connected_component'
+2018-12-12T15:09:42.525282+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:226:in `tsort_each'
+2018-12-12T15:09:42.525284+00:00 app[web.1]: from /app/vendor/ruby-2.4.5/lib/ruby/2.4.0/tsort.rb:205:in `tsort_each'
+2018-12-12T15:09:42.525286+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/initializable.rb:58:in `run_initializers'
+2018-12-12T15:09:42.525289+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/application.rb:353:in `initialize!'
+2018-12-12T15:09:42.525292+00:00 app[web.1]: from /app/config/environment.rb:5:in `<top (required)>'
+2018-12-12T15:09:42.525296+00:00 app[web.1]: from config.ru:3:in `require_relative'
+2018-12-12T15:09:42.525297+00:00 app[web.1]: from config.ru:3:in `block in <main>'
+2018-12-12T15:09:42.525301+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/builder.rb:55:in `instance_eval'
+2018-12-12T15:09:42.525303+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/builder.rb:55:in `initialize'
+2018-12-12T15:09:42.525306+00:00 app[web.1]: from config.ru:in `new'
+2018-12-12T15:09:42.525310+00:00 app[web.1]: from config.ru:in `<main>'
+2018-12-12T15:09:42.525313+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/builder.rb:49:in `eval'
+2018-12-12T15:09:42.525317+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/builder.rb:49:in `new_from_string'
+2018-12-12T15:09:42.525319+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/builder.rb:40:in `parse_file'
+2018-12-12T15:09:42.525323+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/server.rb:319:in `build_app_and_options_from_config'
+2018-12-12T15:09:42.525324+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/server.rb:219:in `app'
+2018-12-12T15:09:42.525332+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/commands/server/server_command.rb:24:in `app'
+2018-12-12T15:09:42.525334+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/server.rb:354:in `wrapped_app'
+2018-12-12T15:09:42.525338+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/rack-2.0.6/lib/rack/server.rb:283:in `start'
+2018-12-12T15:09:42.525339+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/commands/server/server_command.rb:44:in `start'
+2018-12-12T15:09:42.525341+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/commands/server/server_command.rb:135:in `block in perform'
+2018-12-12T15:09:42.525344+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/commands/server/server_command.rb:130:in `tap'
+2018-12-12T15:09:42.525346+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/commands/server/server_command.rb:130:in `perform'
+2018-12-12T15:09:42.525348+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+2018-12-12T15:09:42.525349+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+2018-12-12T15:09:42.525353+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+2018-12-12T15:09:42.525355+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/command/base.rb:63:in `perform'
+2018-12-12T15:09:42.525356+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/command.rb:44:in `invoke'
+2018-12-12T15:09:42.525358+00:00 app[web.1]: from /app/vendor/bundle/ruby/2.4.0/gems/railties-5.1.6.1/lib/rails/commands.rb:16:in `<top (required)>'
+2018-12-12T15:09:42.525360+00:00 app[web.1]: from bin/rails:4:in `require'
+2018-12-12T15:09:42.525364+00:00 app[web.1]: from bin/rails:4:in `<main>'
+2018-12-12T15:09:42.621486+00:00 heroku[web.1]: Process exited with status 1
+2018-12-12T15:09:42.483517+00:00 app[api]: Starting process with command `rails c` by user jonchua97@gmail.com
+2018-12-12T15:09:47.750787+00:00 heroku[run.4126]: Awaiting client
+2018-12-12T15:09:47.791056+00:00 heroku[run.4126]: Starting process with command `rails c`
+2018-12-12T15:09:47.741639+00:00 heroku[run.4126]: State changed from starting to up
+2018-12-12T15:09:57.627006+00:00 heroku[run.4126]: Process exited with status 1
+2018-12-12T15:09:57.819463+00:00 heroku[run.4126]: State changed from up to complete
+2018-12-12T15:11:36.300827+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cvwo-todo-test.herokuapp.com request_id=62b7153b-6706-4e22-a639-4e124666ba99 fwd="138.75.228.206" dyno= connect= service= status=503 bytes= protocol=https
+2018-12-12T15:11:37.114120+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cvwo-todo-test.herokuapp.com request_id=c0488a42-c107-4c0a-9d82-d46575882b0d fwd="138.75.228.206" dyno= connect= service= status=503 bytes= protocol=https
