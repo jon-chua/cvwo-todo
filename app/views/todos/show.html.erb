@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <h2 id="notice"><%= notice %></h2>
 
-<p>
-  <strong>Completed:</strong>
-  <%= @todo.completed %>
-</p>
+  <p>
+    <strong>Completed:</strong>
+    <%= @todo.completed %>
+  </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo.title %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @todo.title %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @todo.description %>
+  </p>
 
-<p>
-  <strong>Tags:</strong>
-  <%= @todo.tags %>
-</p>
+  <p>
+    <strong>Tags:</strong>
+    <%= @todo.tags %>
+  </p>
 
-<%= link_to 'Edit', edit_todo_path(@todo) %> |
-<%= link_to 'Back', todos_path %>
+  <%= link_to 'Edit', edit_todo_path(@todo), class: "btn btn-outline-primary" %> |
+  <%= link_to 'Back', todos_path, class: "btn btn-outline-secondary" %>
+</div>

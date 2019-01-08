@@ -4,7 +4,11 @@ class TodosController < ApplicationController
   # GET /todos
   # GET /todos.json
   def index
-    @todos = Todo.all
+    if params[:term]
+	  @todos = Todo.where('tags LIKE :search OR title LIKE :search OR description LIKE :search', search: "%#{params[:term]}%")
+	else
+	  @todos = Todo.all
+	end
   end
 
   # GET /todos/1
@@ -69,15 +73,15 @@ class TodosController < ApplicationController
 	end
 	format.js {render inline: "location.reload();" }
   end
-
+  
   private
-    # Use callbacks to share common setup or constraints between actions.
+	# Use callbacks to share common setup or constraints between actions.
     def set_todo
       @todo = Todo.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def todo_params
-      params.require(:todo).permit(:completed, :title, :description, :tags)
+      params.require(:todo).permit(:completed, :title, :description, :tags, :term)
     end
 end
