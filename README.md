@@ -14,5 +14,4 @@
 
 ## Test Deployment
 
-[Test Deployment](https://desolate-scrubland-50087.herokuapp.com/)
 [Test Deployment Version 2](https://enigmatic-hamlet-31284.herokuapp.com/)
