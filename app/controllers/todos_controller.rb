@@ -5,7 +5,7 @@ class TodosController < ApplicationController
   # GET /todos.json
   def index
     if params[:term]
-	  @todos = Todo.where('tags LIKE :search OR title LIKE :search OR description LIKE :search', search: "%#{params[:term]}%")
+	  @todos = Todo.where('tags LIKE :search OR title LIKE :search OR description LIKE :search', search: "%#{params[:term.downcase]}%")
 	else
 	  @todos = Todo.all
 	end
